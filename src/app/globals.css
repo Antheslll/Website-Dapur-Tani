@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.grey {
+  background-color: #cdcdcd;
+}
+.green {
+  color: #04e824;
+}
+.green-bg {
+  background-color: #04e824;
+}
+
+.dark-green-bg {
+  background-color: #3f4b3b;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("./font/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-reguler";
+  src: url("./font/roboto/Roboto-Regular.ttf");
+}
+
+.btn {
+  @apply py-4 px-2 text-[9px] font-[verdana] font-bold;
+}
+
+.transisi {
+  transition: all 1s ease-in-out;
+}
+
+.custom-clip {
+  clip-path: path(
+    "M0 50C0 22.3857 22.3858 0 50 0H579.723C608.952 0 631.949 24.9637 629.555 54.0945L578.201 679.095C576.07 705.034 554.396 725 528.369 725H50C22.3858 725 0 702.614 0 675V50Z"
+  );
+}
+
+.custom-path {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.registration-input {
+  @apply w-[70%] h-[35px] text-[13px] rounded-lg border border-[#AFAFAF] focus:outline-none focus:bg-[#C3C3C3] focus:text-white hover:bg-[#C3C3C3] pl-2 mx-[15%] mt-2;
+}
+
+.registration-button {
+  @apply w-[70%] h-[30px] mt-2 text-[12px] text-white bg-[#04e824] rounded-3xl mx-[15%] hover:bg-black hover:text-[#04e824];
+}
+
+registration-input:hover::placeholder {
+  color: white;
+}
+
+registration-input:focus::placeholder {
+  color: white;
+}
+
+body {
+  background-color: "#FFFFF2";
+  overflow-x: hidden;
+}
+
+.custom-calendar .rbc-toolbar {
+  border: none !important; /* Hilangkan border di toolbar */
+}
+
+.custom-calendar .rbc-month-view {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #04e824; /* Warna thumb */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: #04e824; /* Warna thumb */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #6e6e6e;
+  border-radius: 10px;
+}

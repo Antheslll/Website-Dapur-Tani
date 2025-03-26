@@ -1,0 +1,17 @@
+@media (min-height: 1180px) {
+  .h-ipadAir {
+    height: 50vh;
+  }
+}
+
+@media (min-height: 1920px) {
+  .h-redmiPadSE {
+    height: 80vh;
+  }
+}
+
+@media (min-height: 1080px) {
+  .h-laptop {
+    height: 80vh;
+  }
+}
